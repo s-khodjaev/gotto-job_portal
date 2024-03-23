@@ -25,14 +25,23 @@
     <title>Gotto Online Job Portal</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav id="main-nav">
       <div class="container">
-        <img src="img/logo.png" alt="Logo" class="logo" />
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" class="logo_img" />
+          <div class="logo-text">
+            <h1>Gotto</h1>
+            <p>Online Job Portal</p>
+          </div>
+        </div>
         <ul>
-          <li><a href="index.html">Homepage</a></li>
+          <li><a class="current" href="index.html">Homepage</a></li>
           <li><a href="about.html">About Gotto</a></li>
           <li>
-            Pages <i class="fas fa-angle-down"></i>
+            <a href="#">Pages</a>
+
+            <!-- Pages <i class="fas fa-angle-down"></i> -->
             <!-- <ul>
               <li><a href="job-listings.html">Job Listings</a></li>
               <li><a href="job-details.html">Job Details</a></li>
@@ -42,9 +51,101 @@
         </ul>
         <ul>
           <li><a href="#">Register</a></li>
-          <li><a class="current" href="#">Login</a></li>
+          <li><a class="current-bg" href="#">Login</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Showcase -->
+    <section id="showcase">
+      <div class="container">
+        <div class="showcase-container">
+          <div class="showcase-content">
+            <h3>Are you looking for a dream job?</h3>
+            <h1>
+              Online Platform. <br />
+              Best Job Portal
+            </h1>
+            <a href="#categories" class="btn btn-transparent">
+              Browse Categories</a
+            >
+          </div>
+          <div class="showcase-search">
+            <h2>Search your dream job</h2>
+            <div class="search-buttons">
+              <div><i class="fas fa-user"></i> Job Title</div>
+              <div><i class="fas fa-location"></i> Location</div>
+            </div>
+            <a href="#" class="btn btn-block">Find a job</a>
+            <div class="keywords">
+              <p>
+                Popular keywords:
+                <span class="keyword">Web Design</span
+                ><span class="keyword">Marketing</span
+                ><span class="keyword">Customer Support</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="py-3">
+      <div class="container">
+        <h2>Browse by Categories</h2>
+        <div class="categories-container">
+          <div>
+            <i class="fa-solid fa-swatchbook"></i>
+            <h4>Web Design</h4>
+          </div>
+          <div>
+            <i class="fa-regular fa-comment"></i>
+            <h4>Marketing</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-video"></i>
+            <h4>Video</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe"></i>
+            <h4>Website</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-users"></i>
+            <h4>Customer Support</h4>
+          </div>
+        </div>
+        <div class="intro-container py-3">
+          <div>
+            <img
+              src="img/professional-asian-businesswoman-gray-blazer.jpg"
+              alt=""
+            />
+            <div class="img-content">
+              <h3>Julia Ward</h3>
+              <p>Investor</p>
+            </div>
+          </div>
+          <div class="int-text">
+            <h3>Introduction Gotto</h3>
+            <p>
+              Gotto Job is a free website template for job portals. This layout
+              is based on Bootstrap 5 CSS framework. Thank you for visiting
+              Tooplate website. Images are from FreePik website.
+            </p>
+            <a href="#" class="btn btn-border-white">Get to know us</a>
+            <a href="#" class="btn-text-white">Explore Jobs</a>
+          </div>
+          <div>
+            <img
+              src="img/horizontal-shot-happy-mixed-race-females.jpg"
+              alt=""
+            />
+            <a href="#" class="btn btn-red">Gotto</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
