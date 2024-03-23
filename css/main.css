@@ -42,6 +42,10 @@ h4 {
   margin-bottom: 0.55rem;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -421,11 +425,11 @@ h4 {
 }
 
 .featured-container .feature {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 3fr 1fr;
   align-items: center;
   margin-bottom: 30px;
-  padding: 0 20px;
+  padding: 20px;
   border-radius: 10px;
 }
 
@@ -436,6 +440,7 @@ h4 {
 
 .featured-container .feature:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  transition: all 0.5s ease;
 }
 
 .featured-container img {
@@ -478,4 +483,95 @@ h4 {
   border-radius: 20px;
   padding: 5px 10px;
   font-size: 14px;
+}
+
+/* Page Navigation */
+
+#page-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#page-navigation > * {
+  margin: 0 10px;
+}
+
+#page-navigation .page-nav__number {
+  background: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+  padding: 9px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#page-navigation .page-nav__number.selected {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+#page-navigation .page-nav__number:hover {
+  background: var(--secondary-color);
+  color: var(--light-color);
+  transition: all 0.5s ease;
+}
+
+#page-navigation p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Advice */
+
+#advice .advice-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+#advice .advice-info .left-side {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 50px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+}
+
+#advice .advice-info .left-side h2 {
+  font-size: 40px;
+}
+
+#advice .advice-info .left-side p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#advice .advice-info .left-side .numbers {
+  display: flex;
+  padding: 30px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+#advice .advice-info .left-side .numbers .number h3 {
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 0;
+  line-height: 0.8;
+}
+
+#advice .advice-info .left-side .numbers .number p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+#advice .advice-info .right-side img {
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
