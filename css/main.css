@@ -24,6 +24,7 @@ body {
   line-height: 1.7;
   background-color: var(--light-color);
   color: var(--dark-color);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -141,6 +142,15 @@ img {
 .py-3 {
   padding: 3rem 0;
 }
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 2rem;
+}
+.px-3 {
+  padding: 0 3rem;
+}
 
 /* Background */
 
@@ -187,6 +197,50 @@ img {
   border-radius: 1000px;
 }
 
+/* Logo */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-text > * {
+  margin: 0;
+  line-height: 1;
+}
+
+.logo-text h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.logo-text p {
+  font-size: 0.75rem;
+  color: var(--red-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.logo_img {
+  width: 65px;
+  margin-right: 20px;
+}
+
+/* List */
+
+.list h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.list li {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 100;
+}
+
 /* Navigation */
 
 #main-nav {
@@ -198,34 +252,6 @@ img {
   grid-template-columns: 3fr 6fr 2fr;
   align-items: center;
   padding: 1rem;
-}
-
-#main-nav .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#main-nav .logo-text > * {
-  margin: 0;
-  line-height: 1;
-}
-
-#main-nav .logo-text h1 {
-  font-size: 2rem;
-  color: var(--primary-color);
-}
-
-#main-nav .logo-text p {
-  font-size: 0.75rem;
-  color: var(--red-color);
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#main-nav .logo_img {
-  width: 65px;
-  margin-right: 20px;
 }
 
 #main-nav ul {
@@ -416,7 +442,7 @@ img {
   align-items: flex-start;
 }
 
-.int-text .int-buttons {
+.int-buttons {
   display: flex;
   align-items: center;
 }
@@ -745,4 +771,187 @@ img {
 #reviews .reviews-container .review .rating i {
   color: orangered;
   margin-right: 4px;
+}
+
+/* Jobs Ads */
+
+#job-ads {
+  position: relative;
+  height: 40vh;
+  background-color: var(--red-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#job-ads::before {
+  content: '';
+  background: url('../img/millennial-group-young-businesspeople.jpg') no-repeat
+    center top/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.12;
+}
+
+#job-ads .ads-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+#job-ads .ads-container > * {
+  z-index: 10;
+}
+
+#job-ads .ads-container .ad-content h2 {
+  font-size: 3rem;
+}
+
+#job-ads .ads-container .ad-content p {
+  font-size: 20px;
+}
+
+#job-ads .ads-container .int-buttons {
+  justify-self: end;
+}
+
+#job-ads .ads-container .btn {
+  margin-right: 20px;
+}
+
+/* Footer */
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr 5fr;
+  align-items: start;
+  gap: 1rem;
+}
+
+#main-footer .footer-container > *:not(:last-child) {
+  max-width: 1100px;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 0 50px;
+}
+
+#main-footer .footer-container > *:last-child {
+  background-color: var(--primary-color);
+  grid-column: 1 / span 4;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+#main-footer .footer-container .logo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo .logo-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.logo .logo-flex img {
+  margin-right: 4px;
+}
+
+#main-footer .footer-container .logo .address-info p {
+  color: #444;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+#main-footer .footer-container .logo .address-info i {
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+
+#main-footer .footer-container .newsletter {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#main-footer .footer-container .newsletter-form {
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+#main-footer .footer-container .newsletter .input-group {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 1000px;
+  padding: 1rem 2.5rem;
+  width: 100%;
+}
+
+#main-footer .footer-container .newsletter .newsletter-form .input-group input {
+  outline: none;
+  border: 2px solid transparent;
+  padding: 0.2rem;
+}
+
+#main-footer .footer-container .newsletter .newsletter-form .input-group i {
+  font-size: 14px;
+  color: #666;
+}
+
+#main-footer
+  .footer-container
+  .newsletter
+  .newsletter-form
+  .input-group
+  .icon
+  i {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#main-footer .footer-bottom .bottom-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 4fr 2fr 1fr;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#main-footer .footer-bottom .bottom-container > *,
+#main-footer .footer-bottom .bottom-container a,
+#main-footer .footer-bottom .bottom-container i {
+  color: #fff;
+}
+
+#main-footer .footer-bottom .bottom-container p {
+  font-size: 14px;
+}
+
+#main-footer .footer-bottom .bottom-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#main-footer .footer-bottom .bottom-container ul li {
+  font-size: 14px;
+}
+
+#main-footer .footer-bottom .bottom-container .social i {
+  background-color: var(--search-bg-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+#main-footer .footer-bottom .bottom-container .up i {
+  font-size: 2rem;
 }
