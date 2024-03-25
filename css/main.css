@@ -51,7 +51,6 @@ img {
 .container {
   max-width: 1100px;
   margin: auto;
-  overflow: hidden;
   padding: 0 20px;
 }
 
@@ -110,11 +109,17 @@ img {
   color: #fff;
 }
 
-.btn-border-white {
+.btn-border-white,
+.btn-border-grey {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 1000px;
   background: transparent;
+}
+
+.btn-border-grey {
+  border: 1px solid #999;
+  color: var(--red-color);
 }
 
 .btn-red {
@@ -259,11 +264,50 @@ img {
   display: flex;
 }
 
-#main-nav ul li a {
+#main-nav ul li a,
+#main-nav ul li {
   padding: 0.87rem;
-  font-size: 1.2rem;
   font-weight: 100;
   font-size: 1.2rem;
+}
+
+#main-nav ul li a:hover {
+  color: var(--red-color);
+}
+
+#main-nav ul li {
+  position: relative;
+}
+
+#main-nav ul li i {
+  color: #666;
+  font-size: 1rem;
+}
+
+#main-nav ul li ul {
+  display: none;
+}
+
+#main-nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: var(--light-color);
+  z-index: 9999;
+}
+
+#main-nav ul li:hover ul li {
+  display: block;
+  background-color: #fff;
+}
+
+#main-nav ul li:hover ul li a {
+  color: #333;
+}
+
+#main-nav ul li:hover ul li a:hover {
+  color: var(--red-color);
 }
 
 /* Showcase */
@@ -822,6 +866,268 @@ img {
   margin-right: 20px;
 }
 
+/* About */
+
+#about {
+  padding: 2rem;
+  position: relative;
+  color: #fff;
+  background-color: rgba(65, 20, 247, 0.774);
+}
+
+#about::before {
+  content: '';
+  background: url('../img/site-header/close-up-young-business-team-working.jpg')
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+#about .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 45vh;
+}
+
+#about .about-container > * {
+  z-index: 10;
+}
+
+#about h1 {
+  font-size: 4rem;
+  letter-spacing: -1px;
+}
+
+#about .about-link {
+  background-color: #fff;
+  color: var(--dark-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1000px;
+}
+
+#about a {
+  color: var(--primary-color);
+}
+
+#about a:hover {
+  color: var(--red-color);
+}
+
+/* About Info */
+
+#about-info .about-info__container,
+#contact-address .contact-address__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#about-info .about-info__container .about-info__content,
+#contact-address .contact-address__container .contact-info__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem;
+}
+
+#about-info .about-info__container .about-info__content h2 {
+  font-size: 2.5rem;
+}
+
+#about-info .about-info__container .about-info__content h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#about-info .about-info__container .about-info__content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+#about-info .about-info__container .about-info__image img,
+#contact-address .contact-address__container .contact-info__image img {
+  border-radius: 40px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 400px;
+  padding: 1rem;
+}
+
+.contact-detail:nth-of-type(even) {
+  background-color: var(--bg-color);
+  border-radius: 1000px;
+}
+
+.contact-detail i {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.contact-detail h5 {
+  color: var(--secondary-color);
+}
+
+.contact-detail p {
+  color: #666;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* Contact Form */
+
+.form-container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.form-container .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-container .row .form-control {
+  flex-basis: 50%;
+}
+
+.form-container .row .form-control input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1.2rem;
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  text-indent: 5px;
+}
+
+.form-container .row .form-control input:hover {
+  background-color: #fff;
+  outline: 2px solid var(--primary-color);
+}
+
+.form-container textarea {
+  width: 100%;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  resize: none;
+}
+
+.form-container textarea:hover {
+  background-color: #fff;
+  outline: 2px solid var(--primary-color);
+}
+
+.form-container .contact-btn {
+  display: block;
+  width: 25%;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 1.2rem;
+  margin: 20px auto;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-container .contact-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.form-container label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+/* Services */
+
+#services h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+  line-height: 1.9;
+}
+
+#services .services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#services .services-container > div {
+  border-radius: 30px;
+  position: relative;
+}
+
+#services .services-container > div:nth-of-type(even) {
+  background-color: var(--bg-color);
+  padding: 2rem 0.5rem;
+}
+
+#services .services-container > div:nth-of-type(even) .overlay {
+  background-color: #0dcaf0;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+#services .services-container > div:hover {
+  background-color: var(--bg-color);
+  padding: 2rem 0.5rem;
+}
+
+#services .services-container i {
+  font-size: 4rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  margin-top: 2rem;
+}
+
+#services .services-container h4 {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+#services .services-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
 /* Footer */
 
 #main-footer .footer-container {
@@ -953,5 +1259,8 @@ img {
 }
 
 #main-footer .footer-bottom .bottom-container .up i {
-  font-size: 2rem;
+  font-size: 1rem;
+  border: 3px dotted #fff;
+  padding: 8px 10px;
+  border-radius: 50%;
 }
