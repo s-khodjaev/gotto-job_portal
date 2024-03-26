@@ -109,6 +109,17 @@ img {
   color: #fff;
 }
 
+.btn-text-red {
+  color: var(--red-color);
+  border: 1px solid #ccc;
+  padding: 6px 15px;
+}
+
+.btn-text-red:hover {
+  background-color: var(--red-color);
+  color: var(--light-color);
+}
+
 .btn-border-white,
 .btn-border-grey {
   border: 1px solid #fff;
@@ -1180,14 +1191,21 @@ img {
   padding: 6px 12px;
 }
 
-#jobs .section-listing {
+#jobs .section-listing,
+#jobs .section-similar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-#jobs .section-listing h2 {
+#jobs .section-similar p {
+  width: 500px;
+  color: #666;
+}
+
+#jobs .section-listing h2,
+#jobs .section-similar h2 {
   font-size: 2rem;
   color: #000;
 }
@@ -1204,6 +1222,140 @@ img {
 #jobs .section-listing i {
   margin-left: 5px;
   color: #666;
+}
+
+/* Job Details */
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature .keywords span {
+  margin-right: 15px;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+hr {
+  height: 1px;
+  border: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.job-detail__container {
+  display: grid;
+  grid-template-columns: 6fr 3fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job-detail {
+  grid-row: 1 / span 2;
+}
+
+.job-detail h1 {
+  font-size: 50px;
+}
+
+.job-detail .feature > * {
+  color: #666;
+}
+
+.job-detail .feature i,
+.company-detail i {
+  color: var(--primary-color);
+  margin-right: 5px;
+}
+
+.description {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.description div {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.description h2 {
+  font-size: 30px;
+}
+
+.description h3,
+.company-detail h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.description p,
+.company-detail p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.description ul {
+  margin-left: 30px;
+}
+
+.description ul li {
+  color: #666;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.bottom-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottom-icons p {
+  color: #666;
+}
+
+.bottom-icons i {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+.company-detail {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.company-detail div {
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo .company-img {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.company-logo img {
+  width: 45px;
+}
+
+.company-logo i {
+  margin-right: 10px;
+}
+
+.description ul {
+  list-style-type: disc;
 }
 
 /* Footer */
