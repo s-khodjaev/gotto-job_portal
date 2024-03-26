@@ -55,41 +55,29 @@
       </div>
     </nav>
 
-    <!-- Showcase -->
-    <section id="showcase">
+    <!-- Search -->
+    <section id="search-block" class="py-3">
       <div class="container">
-        <div class="showcase-container">
-          <div class="showcase-search">
-            <h2>Search your dream job</h2>
-            <div class="search-buttons">
-              <div><i class="fas fa-user"></i> Job Title</div>
-              <div><i class="fas fa-location-dot"></i> Location</div>
-            </div>
-            <a href="#" class="btn btn-block">Find a job</a>
-            <div class="keywords">
-              <p>
-                Popular keywords:
-                <span class="keyword">Web Design</span
-                ><span class="keyword">Marketing</span
-                ><span class="keyword">Customer Support</span>
-              </p>
-            </div>
+        <div class="search-container">
+          <h2>Search your dream job</h2>
+          <div class="row">
+            <div><i class="fas fa-user"></i> Job Title</div>
+            <div><i class="fas fa-location-dot"></i> Location</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured -->
-    <section id="featured">
-      <div class="container">
-        <div id="page-navigation">
-          <p>Prev</p>
-          <div class="page-nav__number selected">1</div>
-          <div class="page-nav__number">2</div>
-          <div class="page-nav__number">3</div>
-          <div class="page-nav__number">4</div>
-          <div class="page-nav__number">5</div>
-          <p>Next</p>
+          <div class="row">
+            <div><i class="fa-solid fa-money-bill"></i> Salary Range</div>
+            <div><i class="fa-solid fa-laptop"></i> Level</div>
+            <div><i class="fa-solid fa-laptop"></i> Remote</div>
+          </div>
+          <a href="#" class="btn btn-block">Find a job</a>
+          <div class="keywords">
+            <p>
+              Popular keywords:
+              <span class="keyword">Web Design</span
+              ><span class="keyword">Marketing</span
+              ><span class="keyword">Customer Support</span>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -97,13 +85,17 @@
     <!-- Recent Jobs -->
     <section id="jobs">
       <div class="container">
-        <header class="section-header">
-          <h2>Recent Jobs</h2>
-          <p>
-            <strong>Over 10k opening jobs</strong> Feel free to download and use
-            our free <br />
-            HTML templates from Tooplate website.
-          </p>
+        <header class="section-listing">
+          <h2>Results of 30-65 of 1500 jobs</h2>
+          <div>
+            <span>Sort By:</span>
+            <span
+              ><strong>Newest Jobs <i class="fas fa-angle-down"></i></strong
+            ></span>
+            <span
+              ><i class="fa-solid fa-bars"></i> <i class="fa-solid fa-grip"></i
+            ></span>
+          </div>
         </header>
         <div class="cards-container">
           <!-- Card 1 -->
@@ -288,76 +280,111 @@
               </div>
             </div>
           </article>
-        </div>
-        <div class="browse-btn">
-          <a href="#" class="btn btn-red">Browse Job Listings</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Reviews -->
-    <section id="reviews" class="py-3">
-      <div class="container">
-        <header class="section-header">
-          <h2>Happy customers</h2>
-        </header>
-        <div class="reviews-container">
-          <!-- Review 1 -->
-          <article class="review">
-            <div class="row">
-              <div class="person">
-                <img src="img/avatar/blond-man-happy-expression.jpg" alt="" />
-                <div>
-                  <h4>Jackson</h4>
-                  <p>Dev Ops</p>
+          <!-- Card 7 -->
+          <article class="card">
+            <img
+              src="img/jobs/portrait-woman-customer-service-worker.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <div class="row">
+                <h2>Customer Support</h2>
+              </div>
+              <div class="row">
+                <div class="company">
+                  <img src="img/logos/microsoft.png" alt="" />
+                  <span>Microsoft</span>
+                </div>
+                <div class="icons">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
-              <div class="rating">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
+              <div class="row">
+                <p><i class="fas fa-location-dot"></i> Paris, France</p>
+                <p><i class="fa-regular fa-clock"></i> 10 days ago</p>
               </div>
-            </div>
-            <div class="row">
-              <p class="review-text">
-                <img src="img/left-quote.png" alt="" class="quote-img" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolores quas recusandae necessitatibus qui?
-              </p>
+              <hr />
+              <div class="row">
+                <p><i class="fa-solid fa-money-bill"></i> $45-50k</p>
+                <a href="#" class="btn btn-red">Apply Now</a>
+              </div>
             </div>
           </article>
 
-          <!-- Review 2 -->
-          <article class="review">
-            <div class="row">
-              <div class="person">
-                <img
-                  src="img/avatar/portrait-beautiful-young-woman.jpg"
-                  alt=""
-                />
-                <div>
-                  <h4>Haley</h4>
-                  <p>Sales & Marketing</p>
+          <!-- Card 8 -->
+          <article class="card">
+            <img
+              src="img/jobs/young-woman-teaching-english-lessons.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <div class="row">
+                <h2>Language Teacher</h2>
+              </div>
+              <div class="row">
+                <div class="company">
+                  <img src="img/logos/dropbox.png" alt="" />
+                  <span>Dropbox</span>
+                </div>
+                <div class="icons">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
-              <div class="rating">
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-solid fa-star"></i></span>
-                <span><i class="fa-regular fa-star"></i></span>
+              <div class="row">
+                <p><i class="fas fa-location-dot"></i> Paris, France</p>
+                <p><i class="fa-regular fa-clock"></i> 30 minutes ago</p>
+              </div>
+              <hr />
+              <div class="row">
+                <p><i class="fa-solid fa-money-bill"></i> $85k</p>
+                <a href="#" class="btn btn-red">Apply Now</a>
               </div>
             </div>
-            <div class="row">
-              <p class="review-text">
-                <img src="img/left-quote.png" alt="" class="quote-img" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Dolores quas recusandae necessitatibus qui?
-              </p>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="card">
+            <img
+              src="img/jobs/sound-engineer-working-studio-with-equipment.jpg"
+              alt=""
+            />
+            <div class="card-content">
+              <div class="row">
+                <h2>Sound Engineer</h2>
+              </div>
+              <div class="row">
+                <div class="company">
+                  <img src="img/logos/soundcloud.png" alt="" />
+                  <span>Soundcloud</span>
+                </div>
+                <div class="icons">
+                  <i class="fa-regular fa-bookmark"></i>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="row">
+                <p><i class="fas fa-location-dot"></i> Singapore</p>
+                <p><i class="fa-regular fa-clock"></i> 8 hours ago</p>
+              </div>
+              <hr />
+              <div class="row">
+                <p><i class="fa-solid fa-money-bill"></i> $20k</p>
+                <a href="#" class="btn btn-red">Apply Now</a>
+              </div>
             </div>
           </article>
+        </div>
+        <div id="page-navigation">
+          <p>Prev</p>
+          <div class="page-nav__number selected">1</div>
+          <div class="page-nav__number">2</div>
+          <div class="page-nav__number">3</div>
+          <div class="page-nav__number">4</div>
+          <div class="page-nav__number">5</div>
+          <p>Next</p>
         </div>
       </div>
     </section>

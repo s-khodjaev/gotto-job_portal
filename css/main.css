@@ -576,6 +576,7 @@ img {
   align-items: center;
   text-align: center;
   padding: 20px;
+  margin: 50px;
 }
 
 #page-navigation > * {
@@ -1126,6 +1127,83 @@ img {
   font-weight: 300;
   color: #666;
   margin-bottom: 1rem;
+}
+
+/* Search */
+
+#search-block .search-container {
+  background-color: var(--search-bg-color);
+  min-height: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#search-block .search-container h2 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+#search-block .search-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#search-block .search-container .row div {
+  flex: 1;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  text-indent: 10px;
+  color: #666;
+}
+
+#search-block .search-container .btn {
+  margin: 20px 0;
+}
+
+#search-block .search-container i {
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+
+#search-block .search-container .keywords {
+  color: var(--light-color);
+}
+
+#search-block .search-container .keywords .keyword {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  padding: 6px 12px;
+}
+
+#jobs .section-listing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#jobs .section-listing h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+#jobs .section-listing span {
+  margin-right: 20px;
+}
+
+#jobs .section-listing span:first-child {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+#jobs .section-listing i {
+  margin-left: 5px;
+  color: #666;
 }
 
 /* Footer */
