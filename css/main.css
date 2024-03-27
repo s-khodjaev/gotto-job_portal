@@ -1454,7 +1454,6 @@ hr {
 #main-footer .footer-bottom .bottom-container {
   display: grid;
   grid-template-columns: 2fr 2fr 4fr 2fr 1fr;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 2rem;
   padding: 2rem;
